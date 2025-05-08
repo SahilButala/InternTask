@@ -52,12 +52,12 @@ This is a **responsive marketing website** built for the Credex Web Dev Internsh
 ---
 
 ## 🌍 Live Demo
-🔗 [Live Site on Vercel](https://softsell-demo.vercel.app)
+🔗 [Live Site on Vercel]([https://softsell-demo.vercel.app](https://intern-task-lake.vercel.app/))
 
 ---
 
 ## 📁 Repository
-🔗 [GitHub Repo](https://github.com/yourusername/softsell)
+🔗 [GitHub Repo](https://github.com/SahilButala/InternTask)
 
 ---
 
