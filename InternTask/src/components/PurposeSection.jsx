@@ -1,18 +1,27 @@
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import { MdOutlineFileUpload } from "react-icons/md";
+import { GrValidate } from "react-icons/gr";
+import { MdOutlinePaid } from "react-icons/md";
+
 
 const PurposeSection = () => {
   const features = [
     {
-      icon: "🟣", // Replace with your actual icon component or image
-      title: "Built for impact",
+      icon: MdOutlineFileUpload, // Replace with your actual icon component or image
+      title: "Upload License -",
       description: "We identify and nurture a truly diverse team of designers, developers and marketers"
     },
     {
-      icon: "🔴", // Replace with your actual icon component or image
-      title: "In sync with you",
+      icon: GrValidate, // Replace with your actual icon component or image
+      title: "Get Valuation ",
       description: "We work the way you do by adapting to your workflows and rhythm we aim to blend in for a seamless."
-    }
+    },
+    {
+      icon: MdOutlinePaid, // Replace with your actual icon component or image
+      title: "Get Paid",
+      description: "We work the way you do by adapting to your workflows and rhythm we aim to blend in for a seamless."
+    },
   ];
 
   return (
@@ -35,13 +44,13 @@ const PurposeSection = () => {
               variants={textVariant(0.5)}
               className="text-3xl md:w-4/5 md:text-4xl font-bold text-gray-900"
             >
-              Purpose of a convoy is to keep your team
+             How Its Works
             </motion.h2>
           </motion.div>
 
           <motion.div 
             variants={fadeIn('left', 0.3)}
-            className="col-span-2 grid grid-cols-1 md:grid-cols-2 justify-between gap-8"
+            className="col-span-2 grid grid-cols-1 md:grid-cols-3 justify-between gap-8"
           >
             {features.map((feature, index) => (
               <motion.div 
@@ -51,9 +60,9 @@ const PurposeSection = () => {
               >
                 <motion.div 
                   variants={fadeIn('right', 0.4 * (index + 1))}
-                  className="w-12 h-12 flex items-center justify-center rounded-lg"
+                  className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 p-3 text-white "
                 >
-                  {feature.icon}
+                  <feature.icon size={30} className=""/>
                 </motion.div>
                 <motion.div variants={fadeIn('left', 0.4 * (index + 1))}>
                   <motion.h3 
